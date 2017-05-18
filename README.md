@@ -1,7 +1,7 @@
-luci-app-njitclient
+luci-app-c3hclient
 ===================
 
-LuCI configuration pages for <a href="https://github.com/liuqun/njit8021xclient/" target="_blank">njit8021xclient</a> (NJIT 802.1X Client)
+LuCI configuration pages for [c3h-client](https://github.com/Trim21/c3h_client)
 
 适用于[c3h-client](https://github.com/Trim21/c3h_client) 的LuCI网页管理界面，支持设置是否自启动C3h-Client、保存用户配置信息等。
 

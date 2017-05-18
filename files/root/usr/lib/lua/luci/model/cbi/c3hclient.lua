@@ -36,7 +36,7 @@ rec = s:option(Value, "reconect", translate("Reconect"))
 
 local apply = luci.http.formvalue("cbi.apply")
 if apply then
-	io.popen("/etc/init.d/njitclient restart")
+	io.popen("/etc/init.d/c3hclient restart")
 end
 
 return m

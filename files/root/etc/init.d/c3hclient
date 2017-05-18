@@ -1,7 +1,7 @@
 #!/bin/sh /etc/rc.common
 START=50
 
-run_njit()
+run_c3h()
 {
 	local enable
 	config_get_bool enable $1 enable
@@ -26,20 +26,20 @@ run_njit()
 			c3h-client $username $password $ifname $reconect &
 		# fi
 		
-		echo "NJIT Client has started."
+		echo "c3h Client has started."
 	fi
 }
 
 start()
 {
-	config_load njitclient
-	config_foreach run_njit login
+	config_load c3hclient
+	config_foreach run_c3h login
 }
 
 stop()
 {
-	killall c3h-clientt
+	killall c3h-client
 	killall udhcpc
 	
-	echo "NJIT Client has stoped."
+	echo "c3h Client has stoped."
 }

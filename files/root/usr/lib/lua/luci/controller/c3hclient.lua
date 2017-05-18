@@ -1,5 +1,5 @@
-module("luci.controller.njitclient", package.seeall)
+module("luci.controller.c3hclient", package.seeall)
 
 function index()
-        entry({"admin", "network", "njitclient"}, cbi("njitclient"), _("NJIT Client"), 100)
+        entry({"admin", "network", "c3hclient"}, cbi("c3hclient"), _("C3h Client"), 100)
         end
