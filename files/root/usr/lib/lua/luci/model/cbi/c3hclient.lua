@@ -12,7 +12,7 @@ You may obtain a copy of the License at
 
 require("luci.sys")
 
-m = Map("njitclient", translate("NJIT Client"), translate("Configure NJIT 802.11x client."))
+m = Map("c3hclient", translate("C3H Client"), translate("Configure c3h 802.11x client."))
 
 s = m:section(TypedSection, "login", "")
 s.addremove = false
@@ -30,6 +30,9 @@ for k, v in ipairs(luci.sys.net.devices()) do
 		ifname:value(v)
 	end
 end
+
+rec = s:option(Value, "reconect", translate("Reconect"))
+
 
 local apply = luci.http.formvalue("cbi.apply")
 if apply then

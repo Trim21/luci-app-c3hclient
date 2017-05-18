@@ -16,6 +16,6 @@ opkg install luci-app-c3hclient_0.1_all.ipk
 
 安装后请访问LuCI中的“系统”->“启动项”，并将“c3hclient”设置为启用。
 
-目前尚未完成
+**目前尚未完成**
 
 本项目fork过来是为了改造成luci-app-c3hclient的,与njit-client就没什么关系了.

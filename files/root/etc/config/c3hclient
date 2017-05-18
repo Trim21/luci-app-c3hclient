@@ -3,3 +3,4 @@ config login
 	option password ''
 	option ifname 'eth0'
 	option domain ''
+	option reconect ''

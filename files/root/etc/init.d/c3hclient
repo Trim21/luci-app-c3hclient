@@ -11,17 +11,20 @@ run_njit()
 		local password
 		local domain
 		local ifname
+		local reconect
 		
 		config_get username $1 username
 		config_get password $1 password
 		config_get domain $1 domain
 		config_get ifname $1 ifname
+		config_get reconect $1 reconect
 		
-		if [ "$domain" != "" ]; then
-			njit-client $username@$domain $password $ifname &
-		else
-			njit-client $username $password $ifname &
-		fi
+		
+		# if [ "$domain" != "" ]; then
+			# c3h-client $username@$domain $password $ifname &
+		# else
+			c3h-client $username $password $ifname $reconect &
+		# fi
 		
 		echo "NJIT Client has started."
 	fi
@@ -35,7 +38,7 @@ start()
 
 stop()
 {
-	killall njit-client
+	killall c3h-clientt
 	killall udhcpc
 	
 	echo "NJIT Client has stoped."
