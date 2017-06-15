@@ -1,6 +1,7 @@
 luci-app-c3hclient
 ===================
 
+fork from [mayswind/luci-app-njitclient](https://github.com/mayswind/luci-app-njitclient)
 LuCI configuration pages for [c3h-client](https://github.com/Trim21/c3h_client)
 
 适用于[c3h-client](https://github.com/Trim21/c3h_client) 的LuCI网页管理界面，支持设置是否自启动C3h-Client、保存用户配置信息等。
