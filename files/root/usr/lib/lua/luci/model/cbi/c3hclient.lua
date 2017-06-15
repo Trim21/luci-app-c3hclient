@@ -22,7 +22,6 @@ enable = s:option(Flag, "enable", translate("Enable"))
 name = s:option(Value, "username", translate("Username"))
 pass = s:option(Value, "password", translate("Password"))
 pass.password = true
-domain = s:option(Value, "domain", translate("Domain"))
 
 ifname = s:option(ListValue, "ifname", translate("Interfaces"))
 for k, v in ipairs(luci.sys.net.devices()) do
@@ -32,7 +31,7 @@ for k, v in ipairs(luci.sys.net.devices()) do
 end
 
 rec = s:option(Value, "reconect", translate("Reconect"))
-
+rec.optional = false
 
 local apply = luci.http.formvalue("cbi.apply")
 if apply then

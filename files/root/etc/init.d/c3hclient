@@ -15,16 +15,11 @@ run_c3h()
 		
 		config_get username $1 username
 		config_get password $1 password
-		config_get domain $1 domain
 		config_get ifname $1 ifname
 		config_get reconect $1 reconect
 		
 		
-		# if [ "$domain" != "" ]; then
-			# c3h-client $username@$domain $password $ifname &
-		# else
-			c3h-client $username $password $ifname $reconect &
-		# fi
+		c3h-client $username $password $ifname $reconect &
 		
 		echo "c3h Client has started."
 	fi
