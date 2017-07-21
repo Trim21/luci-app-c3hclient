@@ -12,7 +12,7 @@ define Package/luci-app-c3hclient
 	SECTION:=luci
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
-	TITLE:=c3h Client for LuCI
+	TITLE:=C3H Client for LuCI
 	PKGARCH:=all
 endef
 
